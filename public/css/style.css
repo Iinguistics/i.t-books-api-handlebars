@@ -1,0 +1,33 @@
+:root {
+	--primary-color: #333;
+	--primary-hover-color: #5409c8;
+	--box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: #333;
+	background: #f4f4f4;
+}
+
+li {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--primary-color);
+}
+
+.new-books-item li:hover h5 {
+	color: var(--primary-hover-color);
+}

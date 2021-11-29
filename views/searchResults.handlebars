@@ -1,0 +1,21 @@
+<div class='text-center'>
+	<section>
+		<h1 class='my-5'>Search Results</h1>
+		<div
+			class='new-books-container d-flex flex-wrap flex-column flex-md-row justify-content-between align-items-center'
+		>
+			{{#each books}}
+				<div class='new-books-item details'>
+					<li>
+						<a href='/details/{{isbn13}}'>
+							<h5>{{title}}</h5>
+							<img src={{image}} alt='{{title}}' />
+						</a>
+					</li>
+				</div>
+			{{else}}
+				<p>No books found</p>
+			{{/each}}
+		</div>
+	</section>
+</div>

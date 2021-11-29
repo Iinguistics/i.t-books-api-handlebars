@@ -1,0 +1,26 @@
+<div class='text-center'>
+	<section>
+		{{#with book}}
+			<div class='card m-auto' >
+				<div class='row g-0'>
+					<div class='col-md-4'>
+						<img src="{{image}}" class='img-fluid rounded-start' alt="{{title}}" />
+					</div>
+					<div class='col-md-8'>
+						<div class='card-body'>
+							<h5 class='card-title mb-3'>{{title}}</h5>
+							<p class='card-text text-start'>{{desc}}</p>
+                            <p class='card-text text-start'>By: {{authors}}</p>
+                            <p class='card-text text-start'>Pages: {{pages}}</p>
+                            <p class='card-text text-start'>Language: {{language}}</p>
+                            <p class='card-text text-start'>Released: {{year}}</p>
+                            <p class='card-text text-start'>Rating: {{rating}}</p>
+							<p class='card-text text-start'><small class='text-muted'>{{price}}</small></p>
+                            <a href="{{url}}" target="_blank" class="btn btn-dark">Purchase</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		{{/with}}
+	</section>
+</div>
